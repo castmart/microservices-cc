@@ -21,15 +21,18 @@ public class ProductSender {
 
     private static final int FIELDS_PER_LINE = 6;
 
-    @Autowired
     JmsTemplate jmsTemplate;
 
-    @Autowired
     MappingJackson2MessageConverter converter;
 
     @Value("${queue.product}")
-
     String destinationQueue;
+
+    @Autowired
+    public ProductSender(JmsTemplate jmsTemplate, MappingJackson2MessageConverter converter) {
+        this.jmsTemplate = jmsTemplate;
+        this.converter = converter;
+    }
 
     @PostConstruct
     public void init() {
@@ -61,5 +64,9 @@ public class ProductSender {
 
     public void sendMessage(Product product) {
         jmsTemplate.convertAndSend(destinationQueue, product);
+    }
+
+    protected void setQueue(String queue) {
+        this.destinationQueue = queue;
     }
 }

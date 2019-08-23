@@ -3,6 +3,8 @@ package com.castmart.importer.controller;
 import com.castmart.importer.model.Product;
 import com.castmart.importer.service.ProductSender;
 import io.swagger.annotations.ApiOperation;
+import io.swagger.annotations.ApiResponse;
+import io.swagger.annotations.ApiResponses;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -31,6 +33,8 @@ public class ImporterController {
 
     private int counter = 0;
 
+    @ApiOperation(value = "Endpoint to send a product to the Aggrregator service using a random UUID as product id and " +
+            "dummy constant data")
     @GetMapping(path = "product/create", produces = "application/json")
     @ResponseBody
     public String dummy() {
@@ -38,7 +42,11 @@ public class ImporterController {
         return "{\"key\":"+(++counter)+"}";
     }
 
-    @ApiOperation(value = "CSV File of products to upload endpoint")
+    @ApiOperation(value = "Endpoint to upload a CSV File of products. It only reads up to 1000 products per file and omits the first line of the file (considering it is the name of the fields and not a product)")
+    @ApiResponses(value = {
+            @ApiResponse(code = 200, message = "The server has read the file successfully"),
+            @ApiResponse(code = 503, message = "The server is busy, this is a Back pressure mechanism. The importer service has a message queue of 2000, if there is no capacity, then it responds with this code")
+    })
     @PostMapping(path = "upload/product", consumes = "multipart/form-data", produces = "application/json")
     @ResponseBody
     public ResponseEntity<String> productsFile(@RequestParam("file") MultipartFile file) {

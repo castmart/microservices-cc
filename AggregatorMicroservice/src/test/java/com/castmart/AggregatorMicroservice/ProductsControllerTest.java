@@ -13,6 +13,8 @@ import org.mockito.ArgumentCaptor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.http.MediaType;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
@@ -47,7 +49,10 @@ public class ProductsControllerTest {
 	public void givenNoProductsAtDB_then_getAnEmptyJsonArray()throws Exception {
 		List<Product> productList = new ArrayList<>();
 		// Mock repo.
-		when(repository.findAll()).thenReturn(productList);
+		Page<Product> pageResult = mock(Page.class);
+		when(pageResult.getContent()).thenReturn(productList);
+
+		when(repository.findAll(any(PageRequest.class))).thenReturn(pageResult);
 
 		mvc.perform( MockMvcRequestBuilders
 				.get("/products")
@@ -68,8 +73,11 @@ public class ProductsControllerTest {
 		product.setMeasurementUnits("units");
 		List<Product> productList = new ArrayList<>();
 		productList.add(product);
+
+		Page<Product> pageResult = mock(Page.class);
+		when(pageResult.getContent()).thenReturn(productList);
 		// Mock repo.
-		when(repository.findAll()).thenReturn(productList);
+		when(repository.findAll(any(PageRequest.class))).thenReturn(pageResult);
 
 		mvc.perform( MockMvcRequestBuilders
 				.get("/products")

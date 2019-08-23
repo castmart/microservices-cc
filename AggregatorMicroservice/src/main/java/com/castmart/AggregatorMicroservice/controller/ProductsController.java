@@ -4,15 +4,21 @@ import com.castmart.AggregatorMicroservice.model.DayStatistic;
 import com.castmart.AggregatorMicroservice.model.Product;
 import com.castmart.AggregatorMicroservice.persistence.ProductJPARepository;
 import com.castmart.AggregatorMicroservice.service.StatisticsService;
+import io.swagger.annotations.ApiOperation;
+import io.swagger.annotations.ApiResponse;
+import io.swagger.annotations.ApiResponses;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.io.Serializable;
 import java.text.ParseException;
+import java.util.Date;
 import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
@@ -34,22 +40,46 @@ public class ProductsController {
         LOG.info("ProductsController created...");
     }
 
+    @ApiOperation(value = "Endpoint to list the products at the database. It uses simple pagination with the params \"page\" and \"pageSize\". " +
+            "If no query elements are provided then the first 100 elements at database are returned ")
     @GetMapping(produces = "application/json")
     @ResponseBody
-    public ResponseEntity<List<Product>> productsFromDb() {
-        return ResponseEntity.ok(jpaRepo.findAll());
+    public ResponseEntity<List<Product>> productsFromDb(@RequestParam(name="page", required = false) Integer page,
+                                                        @RequestParam(name="pageSize", required = false) Integer pageSize) {
+
+        PageRequest requestParams;
+
+        if (page == null || pageSize == null) {
+            requestParams = new PageRequest(0, 100);
+        } else {
+            requestParams = new PageRequest(page, pageSize);
+        }
+
+        Page<Product> resultPage = jpaRepo.findAll(requestParams);
+        return ResponseEntity.ok(resultPage.getContent());
     }
 
+    @ApiOperation(value = "Endpoint to create/edit a product. If the provided product has an id then it is an update if not then it is a product creation.")
     @PostMapping(produces = "application/json")
     @ResponseBody
     public ResponseEntity<Product> createProduct(@RequestBody Product p) {
-        if (p.getId() == null)
+        if (p.getId() == null) {
             p.setId(UUID.randomUUID().toString());
-        p.setCreationTimestamp(null);
-        p.setEditionTimestamp(null);
+            p.setCreationTimestamp(null);
+            p.setEditionTimestamp(null);
+        } else {
+            p.setEditionTimestamp(new Date());
+        }
         return ResponseEntity.ok(jpaRepo.save(p));
     }
 
+    @ApiOperation(value = "Endpoint to get a product by providing the corresponding ID (valid UUID).")
+    @ApiResponses(value = {
+            @ApiResponse(code = 200, message = "If the product is found"),
+            @ApiResponse(code = 400, message = "If the ID is not a valid UUID"),
+            @ApiResponse(code = 404, message = "If the product is not found")
+
+    })
     @GetMapping(path = "{productId}", produces = "application/json")
     @ResponseBody
     public ResponseEntity<Product> productById(@PathVariable("productId") String productId) {
@@ -61,6 +91,11 @@ public class ProductsController {
                 return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
     }
 
+    @ApiOperation(value = "Endpoint to get the statistics of the specified day, the day format should be yyyy-MM-dd.")
+    @ApiResponses(value = {
+            @ApiResponse(code = 200, message = "If there is a valid result"),
+            @ApiResponse(code = 400, message = "If the specified date is not in the proper format")
+    })
     @GetMapping(path="statistic/{day}", produces = "application/json")
     @ResponseBody
     public ResponseEntity<DayStatistic> getStatistics(@PathVariable("day") String day) throws ParseException {
