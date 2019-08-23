@@ -1,0 +1,48 @@
+# Docker Compose file Reference (https://docs.docker.com/compose/compose-file/)
+
+version: '3.7'
+
+# Define services
+services:
+  # Importer service
+  importer-microservice:
+    # Configuration for building the docker image for the backend service
+    build:
+      context: ImporterMicroservice # Use an image built from the specified dockerfile in the `polling-app-server` directory.
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080" # Forward the exposed port 8080 on the container to port 8080 on the host machine
+    restart: always
+    depends_on: 
+      - message-broker # This service depends on mysql. Start that first.
+  # Aggregator service
+  aggregator-microservice:
+    # Configuration for building the docker image for the backend service
+    build:
+      context: AggregatorMicroservice # Use an image built from the specified dockerfile in the `polling-app-server` directory.
+      dockerfile: Dockerfile
+    ports:
+      - "8088:8088" # Forward the exposed port 8080 on the container to port 8080 on the host machine
+    restart: always
+    depends_on: 
+      - db
+      - message-broker # This service depends on mysql. Start that first.
+  # Database
+  db:
+    image: mysql:5.7
+    ports:
+      - "3306:3306"
+    restart: always
+    environment:
+      MYSQL_DATABASE: stores
+      MYSQL_USER: aggregator
+      MYSQL_PASSWORD: password
+      MYSQL_ROOT_PASSWORD: root
+    #volumes:
+    #  - database_data:/var/lib/postgresql/data
+  # JMS broker (ActiveMQ)
+  message-broker:
+    image: webcenter/activemq
+    ports:
+      - "61616:61616"
+      - "8161:8161"

@@ -1,0 +1,123 @@
+2019-08-18 01:22:58,804 INFO com.castmart.importer.ImporterMicroserviceApplication [main] Starting ImporterMicroserviceApplication on mbjccm.local with PID 44247 (/Users/castmart/repositories/commercetools/microservices-cc/ImporterMicroservice/target/classes started by castmart in /Users/castmart/repositories/commercetools/microservices-cc/ImporterMicroservice)
+2019-08-18 01:22:58,807 DEBUG com.castmart.importer.ImporterMicroserviceApplication [main] Running with Spring Boot v2.1.7.RELEASE, Spring v5.1.9.RELEASE
+2019-08-18 01:22:58,810 INFO com.castmart.importer.ImporterMicroserviceApplication [main] No active profile set, falling back to default profiles: default
+2019-08-18 01:23:01,124 INFO org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2019-08-18 01:23:01,124 INFO org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-08-18 01:23:01,263 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2019-08-18 01:23:02,407 INFO com.castmart.importer.ImporterMicroserviceApplication [main] Started ImporterMicroserviceApplication in 4.423 seconds (JVM running for 5.021)
+2019-08-18 01:23:28,536 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-08-18 01:25:46,043 INFO com.castmart.importer.ImporterMicroserviceApplication [main] Starting ImporterMicroserviceApplication on mbjccm.local with PID 44261 (/Users/castmart/repositories/commercetools/microservices-cc/ImporterMicroservice/target/classes started by castmart in /Users/castmart/repositories/commercetools/microservices-cc/ImporterMicroservice)
+2019-08-18 01:25:46,046 DEBUG com.castmart.importer.ImporterMicroserviceApplication [main] Running with Spring Boot v2.1.7.RELEASE, Spring v5.1.9.RELEASE
+2019-08-18 01:25:46,047 INFO com.castmart.importer.ImporterMicroserviceApplication [main] No active profile set, falling back to default profiles: default
+2019-08-18 01:25:48,270 INFO org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2019-08-18 01:25:48,270 INFO org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-08-18 01:25:48,421 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2019-08-18 01:25:49,582 INFO com.castmart.importer.ImporterMicroserviceApplication [main] Started ImporterMicroserviceApplication in 4.278 seconds (JVM running for 4.888)
+2019-08-18 01:26:00,297 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-08-18 01:26:00,403 DEBUG com.castmart.importer.controller.ImporterController [http-nio-8080-exec-1] debug::dummy
+2019-08-18 01:26:00,403 INFO com.castmart.importer.controller.ImporterController [http-nio-8080-exec-1] info::dummy
+2019-08-18 01:26:13,100 DEBUG com.castmart.importer.controller.ImporterController [http-nio-8080-exec-4] debug::dummy
+2019-08-18 01:26:13,100 INFO com.castmart.importer.controller.ImporterController [http-nio-8080-exec-4] info::dummy
+2019-08-18 01:26:14,502 DEBUG com.castmart.importer.controller.ImporterController [http-nio-8080-exec-6] debug::dummy
+2019-08-18 01:26:14,503 INFO com.castmart.importer.controller.ImporterController [http-nio-8080-exec-6] info::dummy
+2019-08-18 01:26:15,319 DEBUG com.castmart.importer.controller.ImporterController [http-nio-8080-exec-8] debug::dummy
+2019-08-18 01:26:15,319 INFO com.castmart.importer.controller.ImporterController [http-nio-8080-exec-8] info::dummy
+2019-08-18 01:26:15,627 DEBUG com.castmart.importer.controller.ImporterController [http-nio-8080-exec-10] debug::dummy
+2019-08-18 01:26:15,627 INFO com.castmart.importer.controller.ImporterController [http-nio-8080-exec-10] info::dummy
+2019-08-18 01:28:01,033 INFO com.castmart.importer.ImporterMicroserviceApplication [main] Starting ImporterMicroserviceApplication on mbjccm.local with PID 44275 (/Users/castmart/repositories/commercetools/microservices-cc/ImporterMicroservice/target/classes started by castmart in /Users/castmart/repositories/commercetools/microservices-cc/ImporterMicroservice)
+2019-08-18 01:28:01,038 DEBUG com.castmart.importer.ImporterMicroserviceApplication [main] Running with Spring Boot v2.1.7.RELEASE, Spring v5.1.9.RELEASE
+2019-08-18 01:28:01,039 INFO com.castmart.importer.ImporterMicroserviceApplication [main] No active profile set, falling back to default profiles: default
+2019-08-18 01:28:03,151 INFO org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2019-08-18 01:28:03,152 INFO org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-08-18 01:28:03,289 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2019-08-18 01:28:04,443 INFO com.castmart.importer.ImporterMicroserviceApplication [main] Started ImporterMicroserviceApplication in 4.365 seconds (JVM running for 4.962)
+2019-08-18 01:28:09,290 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-08-18 01:28:09,406 INFO com.castmart.importer.service.ProductListener [DefaultMessageListenerContainer-1] Message received: org.apache.activemq.command.ActiveMQObjectMessage
+2019-08-18 01:28:09,421 DEBUG com.castmart.importer.controller.ImporterController [http-nio-8080-exec-1] debug::dummy
+2019-08-18 01:28:09,421 INFO com.castmart.importer.controller.ImporterController [http-nio-8080-exec-1] info::dummy
+2019-08-18 01:28:55,925 INFO com.castmart.importer.ImporterMicroserviceApplication [main] Starting ImporterMicroserviceApplication on mbjccm.local with PID 44281 (/Users/castmart/repositories/commercetools/microservices-cc/ImporterMicroservice/target/classes started by castmart in /Users/castmart/repositories/commercetools/microservices-cc/ImporterMicroservice)
+2019-08-18 01:28:55,928 DEBUG com.castmart.importer.ImporterMicroserviceApplication [main] Running with Spring Boot v2.1.7.RELEASE, Spring v5.1.9.RELEASE
+2019-08-18 01:28:55,929 INFO com.castmart.importer.ImporterMicroserviceApplication [main] No active profile set, falling back to default profiles: default
+2019-08-18 01:28:58,009 INFO org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2019-08-18 01:28:58,010 INFO org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-08-18 01:28:58,161 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2019-08-18 01:28:59,237 INFO com.castmart.importer.ImporterMicroserviceApplication [main] Started ImporterMicroserviceApplication in 4.178 seconds (JVM running for 4.775)
+2019-08-18 01:29:04,378 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-08-18 01:29:04,479 INFO com.castmart.importer.service.ProductListener [DefaultMessageListenerContainer-1] Message received: org.apache.activemq.command.ActiveMQObjectMessage
+2019-08-18 01:29:04,491 DEBUG com.castmart.importer.controller.ImporterController [http-nio-8080-exec-1] debug::dummy
+2019-08-18 01:29:04,491 INFO com.castmart.importer.controller.ImporterController [http-nio-8080-exec-1] info::dummy
+2019-08-18 01:31:34,240 INFO com.castmart.importer.ImporterMicroserviceApplication [main] Starting ImporterMicroserviceApplication on mbjccm.local with PID 44292 (/Users/castmart/repositories/commercetools/microservices-cc/ImporterMicroservice/target/classes started by castmart in /Users/castmart/repositories/commercetools/microservices-cc/ImporterMicroservice)
+2019-08-18 01:31:34,252 DEBUG com.castmart.importer.ImporterMicroserviceApplication [main] Running with Spring Boot v2.1.7.RELEASE, Spring v5.1.9.RELEASE
+2019-08-18 01:31:34,253 INFO com.castmart.importer.ImporterMicroserviceApplication [main] No active profile set, falling back to default profiles: default
+2019-08-18 01:31:36,372 INFO org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2019-08-18 01:31:36,373 INFO org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-08-18 01:31:36,512 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2019-08-18 01:31:37,637 INFO com.castmart.importer.ImporterMicroserviceApplication [main] Started ImporterMicroserviceApplication in 4.281 seconds (JVM running for 4.888)
+2019-08-18 01:31:43,748 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-08-18 01:31:43,838 INFO com.castmart.importer.service.ProductListener [DefaultMessageListenerContainer-1] Message received: org.apache.activemq.command.ActiveMQObjectMessage
+2019-08-18 01:31:43,846 DEBUG com.castmart.importer.controller.ImporterController [http-nio-8080-exec-1] debug::dummy
+2019-08-18 01:31:43,846 INFO com.castmart.importer.controller.ImporterController [http-nio-8080-exec-1] info::dummy
+2019-08-18 01:36:16,787 INFO com.castmart.importer.ImporterMicroserviceApplication [main] Starting ImporterMicroserviceApplication on mbjccm.local with PID 44305 (/Users/castmart/repositories/commercetools/microservices-cc/ImporterMicroservice/target/classes started by castmart in /Users/castmart/repositories/commercetools/microservices-cc/ImporterMicroservice)
+2019-08-18 01:36:16,790 DEBUG com.castmart.importer.ImporterMicroserviceApplication [main] Running with Spring Boot v2.1.7.RELEASE, Spring v5.1.9.RELEASE
+2019-08-18 01:36:16,791 INFO com.castmart.importer.ImporterMicroserviceApplication [main] No active profile set, falling back to default profiles: default
+2019-08-18 01:36:19,041 INFO org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2019-08-18 01:36:19,042 INFO org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-08-18 01:36:19,183 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2019-08-18 01:36:20,342 INFO com.castmart.importer.ImporterMicroserviceApplication [main] Started ImporterMicroserviceApplication in 4.429 seconds (JVM running for 5.004)
+2019-08-18 01:36:24,175 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-08-18 01:36:24,281 INFO com.castmart.importer.service.ProductListener [DefaultMessageListenerContainer-1] Message received: org.apache.activemq.command.ActiveMQObjectMessage
+2019-08-18 01:36:24,290 INFO com.castmart.importer.service.ProductListener [DefaultMessageListenerContainer-1] ActiveMQObjectMessage {commandId = 5, responseRequired = true, messageId = ID:mbjccm.local-64934-1566110180107-1:2:1:1:1, originalDestination = null, originalTransactionId = null, producerId = ID:mbjccm.local-64934-1566110180107-1:2:1:1, destination = queue://"productsQueue", transactionId = null, expiration = 0, timestamp = 1566110184268, arrival = 0, brokerInTime = 1566110184300, brokerOutTime = 1566110184303, correlationId = null, replyTo = null, persistent = true, type = null, priority = 4, groupID = null, groupSequence = 0, targetConsumerId = null, compressed = false, userID = null, content = org.apache.activemq.util.ByteSequence@708aab94, marshalledProperties = null, dataStructure = null, redeliveryCounter = 0, size = 0, properties = null, readOnlyProperties = true, readOnlyBody = true, droppable = false, jmsXGroupFirstForConsumer = false}
+2019-08-18 01:36:24,295 DEBUG com.castmart.importer.controller.ImporterController [http-nio-8080-exec-1] debug::dummy
+2019-08-18 01:36:24,295 INFO com.castmart.importer.controller.ImporterController [http-nio-8080-exec-1] info::dummy
+2019-08-18 01:44:37,361 INFO com.castmart.importer.ImporterMicroserviceApplication [main] Starting ImporterMicroserviceApplication on mbjccm.local with PID 44339 (/Users/castmart/repositories/commercetools/microservices-cc/ImporterMicroservice/target/classes started by castmart in /Users/castmart/repositories/commercetools/microservices-cc/ImporterMicroservice)
+2019-08-18 01:44:37,365 DEBUG com.castmart.importer.ImporterMicroserviceApplication [main] Running with Spring Boot v2.1.7.RELEASE, Spring v5.1.9.RELEASE
+2019-08-18 01:44:37,366 INFO com.castmart.importer.ImporterMicroserviceApplication [main] No active profile set, falling back to default profiles: default
+2019-08-18 01:44:39,619 INFO org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2019-08-18 01:44:39,619 INFO org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-08-18 01:44:39,773 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2019-08-18 01:44:40,912 INFO com.castmart.importer.ImporterMicroserviceApplication [main] Started ImporterMicroserviceApplication in 4.411 seconds (JVM running for 5.023)
+2019-08-18 01:44:53,021 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-08-18 01:44:53,142 INFO com.castmart.importer.service.ProductListener [DefaultMessageListenerContainer-1] Message received: org.apache.activemq.command.ActiveMQTextMessage
+2019-08-18 01:44:53,143 INFO com.castmart.importer.service.ProductListener [DefaultMessageListenerContainer-1] null
+2019-08-18 01:44:53,151 DEBUG com.castmart.importer.controller.ImporterController [http-nio-8080-exec-1] debug::dummy
+2019-08-18 01:44:53,151 INFO com.castmart.importer.controller.ImporterController [http-nio-8080-exec-1] info::dummy
+2019-08-18 01:46:09,743 INFO com.castmart.importer.ImporterMicroserviceApplication [main] Starting ImporterMicroserviceApplication on mbjccm.local with PID 44345 (/Users/castmart/repositories/commercetools/microservices-cc/ImporterMicroservice/target/classes started by castmart in /Users/castmart/repositories/commercetools/microservices-cc/ImporterMicroservice)
+2019-08-18 01:46:09,747 DEBUG com.castmart.importer.ImporterMicroserviceApplication [main] Running with Spring Boot v2.1.7.RELEASE, Spring v5.1.9.RELEASE
+2019-08-18 01:46:09,748 INFO com.castmart.importer.ImporterMicroserviceApplication [main] No active profile set, falling back to default profiles: default
+2019-08-18 01:46:12,377 INFO org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2019-08-18 01:46:12,378 INFO org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-08-18 01:46:12,519 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2019-08-18 01:46:13,705 INFO com.castmart.importer.ImporterMicroserviceApplication [main] Started ImporterMicroserviceApplication in 4.864 seconds (JVM running for 5.496)
+2019-08-18 01:46:34,101 INFO com.castmart.importer.ImporterMicroserviceApplication [main] Starting ImporterMicroserviceApplication on mbjccm.local with PID 44353 (/Users/castmart/repositories/commercetools/microservices-cc/ImporterMicroservice/target/classes started by castmart in /Users/castmart/repositories/commercetools/microservices-cc/ImporterMicroservice)
+2019-08-18 01:46:34,111 DEBUG com.castmart.importer.ImporterMicroserviceApplication [main] Running with Spring Boot v2.1.7.RELEASE, Spring v5.1.9.RELEASE
+2019-08-18 01:46:34,112 INFO com.castmart.importer.ImporterMicroserviceApplication [main] No active profile set, falling back to default profiles: default
+2019-08-18 01:46:36,174 INFO org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2019-08-18 01:46:36,174 INFO org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-08-18 01:46:36,311 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2019-08-18 01:46:37,404 INFO com.castmart.importer.ImporterMicroserviceApplication [main] Started ImporterMicroserviceApplication in 4.241 seconds (JVM running for 4.814)
+2019-08-18 01:46:41,617 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-08-18 01:46:41,763 INFO com.castmart.importer.service.ProductListener [DefaultMessageListenerContainer-1] Message received: org.apache.activemq.command.ActiveMQTextMessage
+2019-08-18 01:46:41,763 DEBUG com.castmart.importer.service.ProductListener [DefaultMessageListenerContainer-1] ProductListener::receivedMessage => {"id":"2feb508c-cdff-4943-b713-6802cfcf5c9d","name":"Chips","description":"Chips","provider":"xxx","available":true,"measurementUnits":"grams"}
+2019-08-18 01:46:41,775 DEBUG com.castmart.importer.controller.ImporterController [http-nio-8080-exec-1] debug::dummy
+2019-08-18 01:46:41,775 INFO com.castmart.importer.controller.ImporterController [http-nio-8080-exec-1] info::dummy
+2019-08-18 01:46:51,995 INFO com.castmart.importer.service.ProductListener [DefaultMessageListenerContainer-1] Message received: org.apache.activemq.command.ActiveMQTextMessage
+2019-08-18 01:46:51,996 DEBUG com.castmart.importer.service.ProductListener [DefaultMessageListenerContainer-1] ProductListener::receivedMessage => {"id":"293cb3ee-7a41-47c4-a9ed-710582a0fb37","name":"Chips","description":"Chips","provider":"xxx","available":true,"measurementUnits":"grams"}
+2019-08-18 01:46:52,001 DEBUG com.castmart.importer.controller.ImporterController [http-nio-8080-exec-4] debug::dummy
+2019-08-18 01:46:52,002 INFO com.castmart.importer.controller.ImporterController [http-nio-8080-exec-4] info::dummy
+2019-08-18 01:46:52,670 DEBUG com.castmart.importer.controller.ImporterController [http-nio-8080-exec-6] debug::dummy
+2019-08-18 01:46:52,671 INFO com.castmart.importer.controller.ImporterController [http-nio-8080-exec-6] info::dummy
+2019-08-18 01:46:52,686 INFO com.castmart.importer.service.ProductListener [DefaultMessageListenerContainer-1] Message received: org.apache.activemq.command.ActiveMQTextMessage
+2019-08-18 01:46:52,687 DEBUG com.castmart.importer.service.ProductListener [DefaultMessageListenerContainer-1] ProductListener::receivedMessage => {"id":"1f8207eb-cbc4-4ade-8d3a-7ff66d013a9a","name":"Chips","description":"Chips","provider":"xxx","available":true,"measurementUnits":"grams"}
+2019-08-18 01:48:53,124 INFO com.castmart.importer.ImporterMicroserviceApplication [main] Starting ImporterMicroserviceApplication on mbjccm.local with PID 44362 (/Users/castmart/repositories/commercetools/microservices-cc/ImporterMicroservice/target/classes started by castmart in /Users/castmart/repositories/commercetools/microservices-cc/ImporterMicroservice)
+2019-08-18 01:48:53,128 DEBUG com.castmart.importer.ImporterMicroserviceApplication [main] Running with Spring Boot v2.1.7.RELEASE, Spring v5.1.9.RELEASE
+2019-08-18 01:48:53,129 INFO com.castmart.importer.ImporterMicroserviceApplication [main] No active profile set, falling back to default profiles: default
+2019-08-18 01:48:55,254 INFO org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2019-08-18 01:48:55,255 INFO org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-08-18 01:48:55,407 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2019-08-18 01:48:55,562 INFO com.castmart.importer.service.ProductSender [main] Product sender created
+2019-08-18 01:48:56,505 INFO com.castmart.importer.ImporterMicroserviceApplication [main] Started ImporterMicroserviceApplication in 4.165 seconds (JVM running for 4.74)
+2019-08-18 01:49:08,102 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-08-18 01:49:08,229 INFO com.castmart.importer.service.ProductListener [DefaultMessageListenerContainer-1] Message received: org.apache.activemq.command.ActiveMQTextMessage
+2019-08-18 01:49:08,230 DEBUG com.castmart.importer.service.ProductListener [DefaultMessageListenerContainer-1] ProductListener::receivedMessage => {"id":"3a4699d2-66d2-4487-afcb-15309e67dafc","name":"Chips","description":"Chips","provider":"xxx","available":true,"measurementUnits":"grams"}
+2019-08-18 01:49:08,252 DEBUG com.castmart.importer.controller.ImporterController [http-nio-8080-exec-1] debug::dummy
+2019-08-18 01:49:08,252 INFO com.castmart.importer.controller.ImporterController [http-nio-8080-exec-1] info::dummy
